@@ -14,7 +14,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.List;
 
-import org.craft.demo.database.GraphDB;
+import org.craft.demo.analyticalstore.GraphDB;
 import org.craft.demo.dataimport.model.GraphDataModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

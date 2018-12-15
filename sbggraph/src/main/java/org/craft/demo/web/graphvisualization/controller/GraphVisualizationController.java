@@ -8,7 +8,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
-import org.craft.demo.database.Vertex;
+import org.craft.demo.analyticalstore.Vertex;
 import org.craft.demo.dataimport.model.CustomerDataModel;
 import org.craft.demo.visualization.VisualizationService;
 import org.springframework.beans.factory.annotation.Autowired;

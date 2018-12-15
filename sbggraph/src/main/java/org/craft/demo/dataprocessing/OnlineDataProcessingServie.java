@@ -12,7 +12,7 @@ import javax.annotation.PostConstruct;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.craft.demo.database.Vertex;
+import org.craft.demo.analyticalstore.Vertex;
 import org.craft.demo.dataimport.dbclients.DBClient;
 import org.craft.demo.dataimport.model.CustomerDataModel;
 import org.craft.demo.dataimport.model.GraphDataModel;
