@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.craft.demo.database.Vertex;
+import org.craft.demo.analyticalstore.Vertex;
 import org.craft.demo.dataimport.dbclients.DBClient;
 import org.craft.demo.dataimport.model.GraphDataModel;
 import org.springframework.beans.factory.annotation.Autowired;

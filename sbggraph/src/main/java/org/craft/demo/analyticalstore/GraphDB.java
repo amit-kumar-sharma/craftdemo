@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.craft.demo.database;
+package org.craft.demo.analyticalstore;
 
 import java.util.Collections;
 import java.util.HashMap;

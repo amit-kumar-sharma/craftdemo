@@ -6,7 +6,7 @@ package org.craft.demo.dataimport.model;
 import java.util.Map;
 import java.util.Set;
 
-import org.craft.demo.database.Vertex;
+import org.craft.demo.analyticalstore.Vertex;
 
 /**
  * @author asharma
