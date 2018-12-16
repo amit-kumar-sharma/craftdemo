@@ -19,6 +19,9 @@ A few things to note:
 - Maven 4.0.0
 - Git 2.x
 
+## Algorithm used for records matching
+- Cosine Similarity algorithm, implementation provided by apache. For more details about this please refer to [commons-text](https://commons.apache.org/proper/commons-text)
+
 ## What tools and technologies may be used for various services in production:
 - Hadoop - for distributed file storage and processing
 - Spark- for distributed computing
@@ -47,6 +50,8 @@ A few things to note:
    ![Page after Submission](images/DatabaseImportPostSubmitPage.png?raw=true)
 11. Clicking on this link will take you the result page that will show you the processed results that the application found out to be similar as shown below:
    ![Page after Submission](images/ResultPage.png?raw=true)
+## How to shutdown the application
+   `curl -X POST http://localhost:8085/sbggraph/actuator/shutdown` or use any web poster tool, you might want to send the "Content-Type" header as "application/json" is posting to this URL doesn't work.
 ## High Level Architecture Diagram for the data pipeline:
 
 ![Architecture Diagram](images/architecture_diagram.png?raw=true "Architecture/Component Diagram")
