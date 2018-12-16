@@ -1,0 +1,5 @@
+fullName,address1,zip,primaryPhone,email
+"Howard Roark", "14 Main St", "95112", "(650)-555 5555", "H@roark.net"
+"John Galt", "200 First st", "33838-5592", null, "J@galt.ca"
+"Jonathan Merkle", "199 A st", "94848", "919-221-2939", "J@smith.com"
+"Laura Smith", "10 A st", "95051", "939-111-6121", "Laura@smith.com"
