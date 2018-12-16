@@ -20,7 +20,15 @@ A few things to note:
 - Git 2.x
 
 ## Algorithm used for records matching
-- Cosine Similarity algorithm, implementation provided by apache. For more details about this please refer to [commons-text](https://commons.apache.org/proper/commons-text)
+- Cosine Similarity algorithm, implementation provided by apache. For more details about this please refer to [commons-text](https://commons.apache.org/proper/commons-text). You may set the acceptable level of cosine similarity value that the two compared values should match upto in the [application.properties](https://github.com/amit-kumar-sharma/craftdemo/blob/master/sbggraph/src/main/resources/application.properties). and you may also specify how many of each record's fields should meet these thresholds in order for those records to be considered same.
+   ```
+   name.match.threshold=0.5
+   street.match.threshold=0.5
+   zip.match.threshold=0.6
+   phone.match.threshold=0.7
+   email.match.threshold=0.8
+   min.attribute.meet.threshold.count=4
+   ```
 
 ## What tools and technologies may be used for various services in production:
 - Hadoop - for distributed file storage and processing
