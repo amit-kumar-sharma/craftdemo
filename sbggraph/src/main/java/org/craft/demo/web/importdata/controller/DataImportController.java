@@ -31,7 +31,7 @@ public class DataImportController {
 	private DataImportService dataImportService;
 	
 	@PostMapping("/submitdbs")
-    public String viewHome(DBInputForm dbInputForm, Model model) {
+    public String importData(DBInputForm dbInputForm, Model model) {
 		LOGGER.info(()-> "Received following request from client to process the data import: " + dbInputForm);
 		
 		model.addAttribute("dbInputForm", new DBInputForm());

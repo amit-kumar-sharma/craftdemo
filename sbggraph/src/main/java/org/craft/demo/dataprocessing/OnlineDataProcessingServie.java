@@ -41,7 +41,18 @@ public class OnlineDataProcessingServie {
 	
 	@PostConstruct
 	private void initializeProcessing() {
-		Thread onlineDataprocessingThread = new Thread(()->{
+		Thread onlineDataprocessingThread = new OnlineDataProcessingThread();
+		//This will allow the application to exit cleanly
+		onlineDataprocessingThread.setDaemon(true);
+		onlineDataprocessingThread.start();
+	}
+	
+	private class OnlineDataProcessingThread extends Thread{
+		/* (non-Javadoc)
+		 * @see java.lang.Thread#run()
+		 */
+		@Override
+		public void run() {
 			while(true) {
 				//Read from the Stream
 				CustomerDataModel customerData = dataStreamReader.readData();
@@ -70,10 +81,7 @@ public class OnlineDataProcessingServie {
 				LOGGER.info(()-> "OnlineDataProcessingServie added following data to the GraphDB: " + graphDataModel);
 				LOGGER.info(()-> "OnlineDataProcessingServie is done processing following data." + customerData);
 			}
-		});
-		//This will allow the application to exit cleanly
-		onlineDataprocessingThread.setDaemon(true);
-		onlineDataprocessingThread.start();
+		}
 	}
 	
 }
