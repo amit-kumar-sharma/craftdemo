@@ -43,7 +43,7 @@ A few things to note:
    `server.port=8085`
 8. Now you should be seeing a page similar to the following:
    ![Home Page](images/DatabaseImportPage.png?raw=true)
-9. Copy the sample DB files present at [orion_db.csv](https://github.com/amit-kumar-sharma/craftdemo/blob/master/sbggraph/src/test/resources/orion_db.csv) and [magellan_db.csv](https://github.com/amit-kumar-sharma/craftdemo/blob/master/sbggraph/src/test/resources/magellan_db.csv). Fill these file paths in the respective text boxes present in the above input page and click the "submit" button.
+9. Copy the sample DB files [orion_db.csv](https://github.com/amit-kumar-sharma/craftdemo/blob/master/sbggraph/src/test/resources/orion_db.csv) and [magellan_db.csv](https://github.com/amit-kumar-sharma/craftdemo/blob/master/sbggraph/src/test/resources/magellan_db.csv) present in [test/resources](../sbggraph/src/test/resources). Fill these file paths in the respective text boxes present in the above input page and click the "submit" button.
 10. After submitting those two files the application will present you with a link to go check the results of your DB ingestion. As shown below click on the that link:
    ![Page after Submission](images/DatabaseImportPostSubmitPage.png?raw=true)
 11. Clicking on this link will take you the result page that will show you the processed results that the application found out to be similar as shown below:
@@ -70,4 +70,6 @@ A few things to note:
 
 ![Data Processing Task](images/OnlineDataProcessingTask.png?raw=true "Data Processing Task")
 
-## Class Diagrams for major classes:
+## Class Diagrams:
+
+![Class diagrams](images/ClassDiagrams.png?raw=true "Class diagrams")
