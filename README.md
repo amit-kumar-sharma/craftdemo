@@ -1,5 +1,4 @@
 # craftdemo
-#### High Level Architecture Diagram for the data processing pipeline:
 
 ## Description/Problem Statement:
 This project is to demonstrate the design for solving a problem where we got to import two very large (petabyte) size databases that may have duplicate customer data. The output should be a graph having a given type of entity as vertex and all the similar business entities of the same type added as an edge in that graph. Essentially a depiction of potentially matching data.
