@@ -29,8 +29,8 @@
             <AppenderRef ref="RollingFile" />
         </Root>
  
-        <!-- LOG "org.intuit*" at DEBUG level -->
-        <Logger name="org.intuit" level="trace"></Logger>
+        <!-- LOG "org.craft.*" at DEBUG level -->
+        <Logger name="org.craft" level="trace"></Logger>
     </Loggers>
  
 </Configuration>

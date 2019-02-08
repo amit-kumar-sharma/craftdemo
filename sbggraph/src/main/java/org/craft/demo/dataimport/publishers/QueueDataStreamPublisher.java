@@ -22,7 +22,7 @@ public class QueueDataStreamPublisher implements DataStreamPublisher<CustomerDat
 
 	/*
 	 * (non-Javadoc)
-	 * @see org.intuit.craft.demo.dataimport.publishers.DataStreamClient#publishData(java.lang.Object)
+	 * @see org.craft.demo.dataimport.publishers.DataStreamClient#publishData(java.lang.Object)
 	 */
 	@Override
 	public void publishData(CustomerDataModel dataModel) {
@@ -31,7 +31,7 @@ public class QueueDataStreamPublisher implements DataStreamPublisher<CustomerDat
 
 	/*
 	 * (non-Javadoc)
-	 * @see org.intuit.craft.demo.dataimport.publishers.DataStreamClient#publishData(java.util.List)
+	 * @see org.craft.demo.dataimport.publishers.DataStreamClient#publishData(java.util.List)
 	 */
 	@Override
 	public void publishData(List<CustomerDataModel> dataModels) {

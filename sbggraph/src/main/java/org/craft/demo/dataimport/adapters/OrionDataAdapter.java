@@ -23,7 +23,7 @@ public class OrionDataAdapter implements DataAdapter<OrionDataModel, CustomerDat
 	
 	/*
 	 * (non-Javadoc)
-	 * @see org.intuit.craft.demo.dataimport.adapters.DataAdapter#adaptData(java.lang.Object)
+	 * @see org.craft.demo.dataimport.adapters.DataAdapter#adaptData(java.lang.Object)
 	 */
 	public CustomerDataModel adaptData(OrionDataModel sourceData) {
 		LOGGER.trace("Adapting Data from " + OrionDataModel.class.getSimpleName() + " to " + CustomerDataModel.class.getSimpleName());
@@ -39,7 +39,7 @@ public class OrionDataAdapter implements DataAdapter<OrionDataModel, CustomerDat
 
 	/*
 	 * (non-Javadoc)
-	 * @see org.intuit.craft.demo.dataimport.adapters.DataAdapter#adaptData(java.util.List)
+	 * @see org.craft.demo.dataimport.adapters.DataAdapter#adaptData(java.util.List)
 	 */
 	@Override
 	public List<CustomerDataModel> adaptData(List<OrionDataModel> sourceData) {

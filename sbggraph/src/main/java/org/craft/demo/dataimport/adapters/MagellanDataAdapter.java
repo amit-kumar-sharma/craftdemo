@@ -23,7 +23,7 @@ public class MagellanDataAdapter implements DataAdapter<MagellanDataModel, Custo
 	
 	/*
 	 * (non-Javadoc)
-	 * @see org.intuit.craft.demo.dataimport.adapters.DataAdapter#adaptData(java.lang.Object)
+	 * @see org.craft.demo.dataimport.adapters.DataAdapter#adaptData(java.lang.Object)
 	 */
 	public CustomerDataModel adaptData(MagellanDataModel sourceData) {
 		LOGGER.trace("Adapting Data from " + MagellanDataModel.class.getSimpleName() + " to " + CustomerDataModel.class.getSimpleName());
@@ -39,7 +39,7 @@ public class MagellanDataAdapter implements DataAdapter<MagellanDataModel, Custo
 
 	/*
 	 * (non-Javadoc)
-	 * @see org.intuit.craft.demo.dataimport.adapters.DataAdapter#adaptData(java.util.List)
+	 * @see org.craft.demo.dataimport.adapters.DataAdapter#adaptData(java.util.List)
 	 */
 	@Override
 	public List<CustomerDataModel> adaptData(List<MagellanDataModel> sourceData) {

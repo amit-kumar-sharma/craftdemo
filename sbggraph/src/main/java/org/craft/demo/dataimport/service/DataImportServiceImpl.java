@@ -30,7 +30,7 @@ public class DataImportServiceImpl implements DataImportService {
 	
 	/*
 	 * (non-Javadoc)
-	 * @see org.intuit.craft.demo.dataimport.DataImportService#importData(java.util.Map)
+	 * @see org.craft.demo.dataimport.DataImportService#importData(java.util.Map)
 	 */
 	@Override
 	public void importData(Map<DatabaseType, Path> databasesPaths) throws DataImportException {
